@@ -3,3 +3,37 @@ venv_linux
 __pycache__
 .ruff_cache
 .pytest_cache
+
+# OpenMemory - IDE/Assistant specific rules
+.windsurf\rules\openmemory.md
+CLAUDE.md
+
+# Auto Claude data directory
+.auto-claude/
+
+# --- migration guard (auto-added): keep junk & secrets out of git ---
+node_modules/
+.venv/
+venv/
+__pycache__/
+dist/
+build/
+out/
+target/
+.next/
+.turbo/
+.cache/
+*.log
+.env
+.env.*
+!.env.example
+!.env.sample
+*.key
+*.pem
+*.pfx
+*.crt
+id_rsa
+id_ed25519
+credentials.json
+credentials.toml
+*.secret
